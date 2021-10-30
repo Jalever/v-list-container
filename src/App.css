@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* h1{
+  quotes:"(" ")";
+}
+h1::before{
+  content:open-quote;
+}
+h1::after{
+  content:close-quote;
+} */
+
+.global-title {
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  background-color: #00ffff;
+}
+.global-title::before, .global-title::after {
+  content: "";
+  border-top: 6px double;
+}
